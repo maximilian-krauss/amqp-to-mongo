@@ -1,8 +1,8 @@
 FROM node:7.2
 
-COPY . /app
-
 RUN npm install
+
+COPY . /app
 
 ENTRYPOINT ["/app/bin/amqp-to-mongo"]
 
